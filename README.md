@@ -8,14 +8,6 @@ Main Project Name: ArtSlicer - A art video processing project
 
 ## Project 1 Name: Clip Cleaner
 
-- 1. Accept a long art process video (up to 4K, any duration)
-- 2. Then it identifies "beautiful" clips and filters out/ or removed "idle", "fully black", "erasingwith eraser" clips
-- 3. Now video should be ready to download with Final Video and RemovedClips/ – idle/erasing with eraser/ unbeautiful clips
-- 4. But now again User chooses clip duration (default 1 sec)
-- 5. Tool splits video into equal-length clips
-- 6. Final outputs:
-- 7. CleanClips/ – ordered beautiful clips
-
 🎯 Goal/ Key Pipeline:
 
 1. Accept raw video (up to 4K, any duration)
@@ -28,15 +20,21 @@ Main Project Name: ArtSlicer - A art video processing project
    📁 Output: Folders of raw Clean Video and Removed Clips
 
 ```Edit
-CleanVideo/
-  ├── CleanVideo.mp4
-RemovedClips/
-  ├── idle_001.mp4
-  ├── erase_001.mp4
+Clip Cleaner/
+├── input_art_video.mp4
+├── output/
+│   ├── CleanVideo/
+│   │   ├── clip_000.mp4 (good)
+│   │   ├── clip_001.mp4 (good)
+│   │   ├── CleanVideo.mp4 (merged good clips)
+│   └── RemovedClips/
+│       ├── idle_001.mp4
+│       ├── erase_002.mp4
 ```
 
 4. But now again by one button click, now spliting remaining CleanVideo content into fixed-duration clips (default: 1 sec)
-   📁 Output: Folders of raw CleanClips
+
+📁 Output: Folders of raw CleanClips – ordered beautiful clips
 
 ```Edit
 CleanClips/
