@@ -8,14 +8,13 @@ Main Project Name: ArtSlicer - A art video processing project
 
 ## Project 1 Name: Clip Cleaner
 
-- Accept a long art process video (up to 4K, any duration)
-- Then it identifies "beautiful" clips and filters out/ or removed "idle", "fully black", "erasingwith eraser" clips
-- Now video should be ready to download
-- But now again User chooses clip duration (default 1 sec)
-- Tool splits video into equal-length clips
-- Final outputs:
-- CleanClips/ – ordered beautiful clips
-- RemovedClips/ – idle/erasing with eraser/ unbeautiful clips
+- 1. Accept a long art process video (up to 4K, any duration)
+- 2. Then it identifies "beautiful" clips and filters out/ or removed "idle", "fully black", "erasingwith eraser" clips
+- 3. Now video should be ready to download with Final Video and RemovedClips/ – idle/erasing with eraser/ unbeautiful clips
+- 4. But now again User chooses clip duration (default 1 sec)
+- 5. Tool splits video into equal-length clips
+- 6. Final outputs:
+- 7. CleanClips/ – ordered beautiful clips
 
 🎯 Goal/ Key Pipeline:
 
@@ -25,23 +24,29 @@ Main Project Name: ArtSlicer - A art video processing project
    - Idle frames (no brush movement)
    - Fully black/blank screens
    - Erasing activity (eraser detection)
-3. Now video should be ready to download or
-4. By one button click, split remaining video content into fixed-duration clips (default: 1 sec)
-
-Optional: ZIP CleanClips/ for download
-
-📁 Output: Folders of raw Clean Clips and Removed Clips
+3. Now video should be ready to download and also RemovedClips/ – idle/erasing with eraser/ unbeautiful clips
+   📁 Output: Folders of raw Clean Video and Removed Clips
 
 ```Edit
-CleanClips/
-  ├── clip_001.mp4
-  ├── clip_002.mp4
+CleanVideo/
+  ├── CleanVideo.mp4
 RemovedClips/
   ├── idle_001.mp4
   ├── erase_001.mp4
 ```
 
-Optional: Auto-download/export ZIP
+4. But now again by one button click, now spliting remaining CleanVideo content into fixed-duration clips (default: 1 sec)
+   📁 Output: Folders of raw CleanClips
+
+```Edit
+CleanClips/
+  ├── clip_001.mp4
+  ├── clip_002.mp4
+```
+
+> Will do this steps UI
+
+Optional: Auto-download/export ZIP for download
 
 ## Project 2 Name: BeaClip - Tool selects Beautiful Clips, Beauty Filter (Time-Based Smart Selector)
 
@@ -63,7 +68,7 @@ Optional: Auto-download/export ZIP
 
 ```Edit
 BeautifulClips/   ← selected top clips up to time limit
-UnbeautifulClips/ ← leftover clips (not selected)
+UnselectedClips/ ← leftover clips (not selected)
 ```
 
 ✅ NO merging into one video file. Just sorted folders with clips in order.
