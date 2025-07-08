@@ -46,6 +46,14 @@ CleanClips/
 
 Optional: Auto-download/export ZIP for download
 
+✅ Web App Tech Stack
+| Layer | Tech | Why |
+| --------------------------------- | ------------------------ | ------- |
+|Frontend|React + Vite|Fast, modern UI framework (or plain HTML for now)|
+|Backend|Flask (Python)|Works well with your existing script|
+|File I/O|Python (tempfile, shutil)|To store uploads and return results|
+|Processing|Your existing Python logic|Already working (Step 1–3 ready)|
+
 ## Project 2 Name: BeaClip - Tool selects Beautiful Clips, Beauty Filter (Time-Based Smart Selector)
 
 > Selects only beautiful clips from CleanClips/ folder and picks as many as needed to fit target total
