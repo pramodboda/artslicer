@@ -47,12 +47,26 @@ CleanClips/
 Optional: Auto-download/export ZIP for download
 
 ✅ Web App Tech Stack
-| Layer | Tech | Why |
-| --------------------------------- | ------------------------ | ------- |
-|Frontend|React + Vite|Fast, modern UI framework (or plain HTML for now)|
-|Backend|Flask (Python)|Works well with your existing script|
-|File I/O|Python (tempfile, shutil)|To store uploads and return results|
-|Processing|Your existing Python logic|Already working (Step 1–3 ready)|
+
+| Layer      | Tech                       | Why                                               |
+| ---------- | -------------------------- | ------------------------------------------------- |
+| Frontend   | React + Vite               | Fast, modern UI framework (or plain HTML for now) |
+| Backend    | Flask (Python)             | Works well with your existing script              |
+| File I/O   | Python (tempfile, shutil)  | To store uploads and return results               |
+| Processing | Your existing Python logic | Already working (Step 1–3 ready)                  |
+
+### 🧱 Folder Structure
+
+```Edit
+clip-cleaner/
+├── backend/
+│ ├── app.py # Flask API
+│ ├── clip_cleaner.py # Your existing logic (modularized)
+│ └── output/ # Stores result folders
+├── frontend/ # Optional Vite React frontend
+│ └── ...
+└── README.md
+```
 
 ## Project 2 Name: BeaClip - Tool selects Beautiful Clips, Beauty Filter (Time-Based Smart Selector)
 
