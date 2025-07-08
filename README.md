@@ -59,16 +59,33 @@ Optional: Auto-download/export ZIP for download
 
 ⌛ User provides: Desired total length (e.g., 60 sec)
 
-🤖 What it does:
+### 🤖 What It Does
 
-- Analyses each clip’s aesthetic quality
-- Ranks and selects(but slips should be in order only) clips up to the target total time
+1. Reads all clips in original order.
+
+2. Calculates a beauty score for each clip:
+
+3. Can use CLIP (OpenAI), NIMA (Google), or a custom model.
+
+4. Selects the top-ranking clips (in order) until total time limit is reached.
+
+5. Moves files into:
+
+- ✅ BeautifulClips/ – top clips selected by score
+
+- ❌ UnselectedClips/ – leftover clips not selected
 
 📁 Output:
 
 ```Edit
-BeautifulClips/   ← selected top clips up to time limit
+BeautifulClips/ ← selected top clips up to time limit
+  ├── clip_003.mp4
+  ├── clip_005.mp4
+
 UnselectedClips/ ← leftover clips (not selected)
+  ├── clip_001.mp4
+  ├── clip_002.mp4
+  ├── clip_004.mp4
 ```
 
 ✅ NO merging into one video file. Just sorted folders with clips in order.
