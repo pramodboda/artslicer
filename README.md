@@ -1,4 +1,4 @@
-# Artslicer
+# ArtSlicer
 
 art-video-tool
 
@@ -44,7 +44,7 @@ Optional: Auto-download/export ZIP
 🤖 What it does:
 
 - Analyses each clip’s aesthetic quality
-- Ranks and selects(but slips should in order only) clips up to the target total time
+- Ranks and selects(but slips should be in order only) clips up to the target total time
 
 📁 Output:
 
